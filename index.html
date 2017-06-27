@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+      <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="myVersion2.js"></script>
+    <link rel="stylesheet" href="epic1.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <title>Battleship</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <header>Battleship</header>
+        <h2 id="winLose"></h2>
+      </div>
+      <div class="col-sm-12 text-center">
+        <button type="button" class="btn btn-success btn-lg">Start</button>
+      </div>
+      <div class="col-sm-8">
+        <table id="board">
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+      <div class="col-sm-4 tracker">
+        <p id="torpedoTracker">Torpedoes Left: 25
+        </p>
+        <p id="hitTracker">
+          Hits: 0
+        </p>
+        <p id="shipTracker">
+          Ships Left: 8
+        </p>
+      </div>
+
+      <div id="blue" class="col-sm-1"></div>
+      <div id="blueText" class="col-sm-1">
+        Torpedo did not hit a ship
+      </div>
+      <div id="red" class="col-sm-1"></div>
+      <div id="redText" class="col-sm-1">
+        Torpedo hit a ship!
+      </div>
+
+
+      <div id="shipLegend" class="col-sm-12" justify-content-end"">
+        <div class="col-sm-3">
+        </div>
+        <div id="green" class="col-sm-1"></div>
+        <div class="col-sm-1 shipText">
+          5 block ship
+        </div>
+        <div id="purple" class="col-sm-1"></div>
+        <div class="col-sm-1 shipText">
+          4 block ship
+        </div>
+        <div id="yellow" class="col-sm-1"></div>
+        <div class="col-sm-1 shipText">
+          3 block ship
+        </div>
+        <div id="orange" class="col-sm-1"></div>
+        <div class="col-sm-1 shipText">
+          2 block ship
+        </div>
+        <div id="pink" class="col-sm-1"></div>
+        <div class="col-sm-1 shipText">
+          1 block ship
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+  </body>
+</html>
